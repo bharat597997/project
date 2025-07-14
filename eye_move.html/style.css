@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Bebas Neue', cursive;
+    background: #000;
+}
+
+.container {
+    display: flex;
+}
+
+.container .eyes {
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: block;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.2), inset 0 0 0 25px #767574;
+}
+
+.container .eyes::before {
+    content: '';
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #000;
+    position: absolute;
+    box-sizing: border-box;
+}
+
